@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body>
+        <div class="item-container">
+            <% products.forEach(function(product) { %>
+                <div class="item">
+                    <img src="<%= product.pictureUrl %>" />
+                    <p><%= product.name %></p>
+                    <p><%= product.price %> $</p>
+                    <p><%= product.description %></p>
+                    <form>
+                        <input type="submit" value="Add to Card" />
+                    </form>
+                </div>
+            <% }) %>
+        </div>
+    </body>
+</html>
